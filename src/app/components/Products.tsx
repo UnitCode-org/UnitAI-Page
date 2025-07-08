@@ -30,7 +30,7 @@ const products = [
 
 export default function Products() {
   return (
-    <section className="py-20 bg-white">
+    <section id="products" className="py-20 bg-white">
       <div className="max-w-4xl px-3 md:mx-auto text-center mb-20">
         <span className="inline-block px-4 py-1 mb-4 rounded-full bg-gray-100 text-gray-600 text-md font-semibold">
           What we offer

@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="relative py-50 px-4 bg-gradient-to-b from-white to-gray-50 -mt-12">
+    <section id="whyus" className="relative py-50 px-4 -mt-12">
       {/* Background Ellipse Pattern */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="relative w-full max-w-4xl">

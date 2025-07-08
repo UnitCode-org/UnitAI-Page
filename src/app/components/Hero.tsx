@@ -8,8 +8,8 @@ const poppins = Poppins({
 });
 export default function Hero() {
   return (
-    <main className="relative px-6 pt-16">
-      <div className=" mx-auto text-center">
+    <main id="hero" className="relative px-6 pt-16">
+      <div className="max-w-5xl mx-auto text-center">
         <div className="absolute left-50">
           <Image src="/small-star.svg" alt="Star Icon" width={10} height={10} />
         </div>

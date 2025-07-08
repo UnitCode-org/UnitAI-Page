@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
+import FadeIn from "./FadeIn";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -40,7 +41,7 @@ export default function UsersSection() {
   ];
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section id="users" className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className={`ml-4 mb-16 ${poppins.className}`}>
@@ -72,31 +73,33 @@ export default function UsersSection() {
           {/* Right Side - Timeline */}
           <div className="space-y-8 pl-20 md:pl-0">
             {userTypes.map((userType, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <div className="flex flex-col items-center">
-                  <div className="flex w-18 h-16 p-6 justify-center items-center aspect-square rounded-[20px] bg-[#FCFCFC] shadow-[0px_4px_0px_0px_#FFF_inset,0px_11.005px_22.01px_0px_rgba(0,0,0,0.12)]">
-                    <Image
-                      src={userType.icon}
-                      alt={userType.title + " icon"}
-                      width={45}
-                      height={45}
-                    />
+              <FadeIn key={index} delay={index * 0.2} enableInView>
+                <div className="flex items-start space-x-4">
+                  <div className="flex flex-col items-center">
+                    <div className="flex w-18 h-16 p-6 justify-center items-center aspect-square rounded-[20px] bg-[#FCFCFC] shadow-[0px_4px_0px_0px_#FFF_inset,0px_11.005px_22.01px_0px_rgba(0,0,0,0.12)]">
+                      <Image
+                        src={userType.icon}
+                        alt={userType.title + " icon"}
+                        width={45}
+                        height={45}
+                      />
+                    </div>
+                    {index < userTypes.length - 1 && (
+                      <div className="w-px h-9 bg-gray-200 mt-4"></div>
+                    )}
                   </div>
-                  {index < userTypes.length - 1 && (
-                    <div className="w-px h-9 bg-gray-200 mt-4"></div>
-                  )}
-                </div>
 
-                {/* Content */}
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    {userType.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {userType.description}
-                  </p>
+                  {/* Content */}
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      {userType.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {userType.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </FadeIn>
             ))}
           </div>
         </div>
