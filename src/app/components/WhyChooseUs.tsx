@@ -92,7 +92,7 @@ export default function WhyChooseUs() {
           ))}
         </div>
         {/* Call-to-Action Section */}
-        <div className="mt-44 ">
+        <div className="mt-44 pb-10">
           {/* Decorative Stars */}
           <div className="absolute  text-white/20">
             <Image

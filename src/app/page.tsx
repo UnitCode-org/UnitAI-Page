@@ -4,6 +4,7 @@ import Mission from "./components/Mission";
 import Products from "./components/Products";
 import UsersSection from "./components/UsersSection";
 import WhyChooseUs from "./components/WhyChooseUs";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Products />|
       <UsersSection />
       <WhyChooseUs />
+      <Footer />
     </div>
   );
 }
