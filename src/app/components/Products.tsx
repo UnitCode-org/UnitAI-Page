@@ -31,7 +31,7 @@ const products = [
 export default function Products() {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto text-center mb-20">
+      <div className="max-w-4xl px-3 md:mx-auto text-center mb-20">
         <span className="inline-block px-4 py-1 mb-4 rounded-full bg-gray-100 text-gray-600 text-md font-semibold">
           What we offer
         </span>
@@ -41,13 +41,13 @@ export default function Products() {
           AI infrastructure. The platform brings together:
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl px-5 md:mx-auto items-center justify-center">
         {products.slice(0, 3).map((p) => (
           <div
             key={p.title}
             className="relative bg-white rounded-2xl shadow-lg p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl min-h-[230px]"
           >
-            <div className="absolute -top-15 -right-5 z-10">
+            <div className="absolute -top-15 -right-5">
               <Image
                 src={p.icon}
                 alt={p.title}
@@ -64,13 +64,13 @@ export default function Products() {
         ))}
 
         {/* Wrapper for last two cards */}
-        <div className="md:col-span-3 flex justify-center gap-12 pt-12">
+        <div className="md:col-span-3 flex flex-col md:flex-row justify-center gap-12 pt-12">
           {products.slice(3).map((p) => (
             <div
               key={p.title}
               className="relative bg-white rounded-2xl shadow-lg p-8 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl min-h-[230px] w-full md:max-w-sm"
             >
-              <div className="absolute -top-11 -right-5 z-10">
+              <div className="absolute -top-11 -right-5">
                 <Image
                   src={p.icon}
                   alt={p.title}

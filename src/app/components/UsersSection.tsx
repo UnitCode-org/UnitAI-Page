@@ -48,16 +48,16 @@ export default function UsersSection() {
             <h2 className="text-[32px] font-bold text-gray-900">
               Who it's for?
             </h2>
-            <div className="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-md font-medium">
+            <div className="hidden bg-gray-100 text-gray-600 md:px-4 md:py-2 rounded-full text-md font-medium">
               Users
             </div>
           </div>
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-2  items-center">
+        <div className="grid md:grid-cols-2  items-center">
           {/* Left Side - SVG Illustration */}
-          <div className="flex justify-center">
+          <div className="hidden md:flex md:justify-center">
             <div className="w-full">
               <Image
                 src="/users-icons/usersLeft.svg"
@@ -70,7 +70,7 @@ export default function UsersSection() {
           </div>
 
           {/* Right Side - Timeline */}
-          <div className="space-y-8">
+          <div className="space-y-8 pl-20 md:pl-0">
             {userTypes.map((userType, index) => (
               <div key={index} className="flex items-start space-x-4">
                 <div className="flex flex-col items-center">

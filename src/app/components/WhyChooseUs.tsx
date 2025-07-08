@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
         </div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2
@@ -130,7 +130,7 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 mx-auto max-w-4xl">
+            <div className="relative mx-auto max-w-4xl">
               <p className="mb-4 text-2xl text-white/90">
                 The next generation of AI won't be built in silos —
               </p>
