@@ -1,6 +1,6 @@
+import HamburgerMenu from "@/components/ui/burgermenu";
 import { Button } from "@/components/ui/button";
 import { Poppins } from "next/font/google";
-import BurgerMenu from "./BurgerMenu";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -45,7 +45,7 @@ function Navbar() {
         </div>
         {/* Mobile Menu */}
         <div className=" mr-4 md:mr-0 md:hidden">
-          <BurgerMenu />
+          <HamburgerMenu />
         </div>
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
