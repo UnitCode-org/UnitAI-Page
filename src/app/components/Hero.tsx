@@ -26,10 +26,17 @@ export default function Hero() {
                 height={20}
               />
             </div>
-            <Image src="/unit-logo.svg" width={1} height={1} alt="Unit Logo" />
-            <span className="text-xl font-normal text-gray-700">
-              Unit Network
-            </span>
+            <div className="flex items-center justify-center gap-2">
+              <Image
+                src="/unit-logo.svg"
+                width={22}
+                height={25}
+                alt="Unit Logo"
+              />
+              <span className="text-xl font-normal text-gray-700">
+                Unit Network
+              </span>
+            </div>
           </div>
         </div>
 
@@ -64,7 +71,7 @@ export default function Hero() {
           <div className=" absolute -bottom-2 -left-2 w-3 h-3 bg-black  border-2 border-violet-400 rounded-sm"></div>
           <div className=" absolute -bottom-2 -right-2 w-3 h-3 bg-black border-2 border-violet-400  rounded-sm"></div>
           {/* Main Headline */}
-          <h1 className="pt-5 text-5xl sm:text-6xl md:text-[82px] font-bold text-gray-900 mb-8 leading-tight">
+          <h1 className="pt-5 text-5xl  md:text-[82px] font-bold text-gray-900 mb-8 leading-tight">
             Build the Future of
             <br />
             <span className="font-bold text-gray-900  bg-clip-text ">
@@ -74,11 +81,11 @@ export default function Hero() {
         </div>
         {/* Description */}
         <div className="space-y-4 mb-12 pt-10">
-          <p className="text-xl text-gray-400  mx-auto">
+          <p className="text-base md:text-xl text-gray-400  mx-auto">
             Full-stack AI studio and ecosystem for creative
             technologists,engineers, and researchers.
           </p>
-          <p className="text-xl text-gray-400  mx-auto">
+          <p className="text-base md:text-xl text-gray-400  mx-auto">
             From prompt to product, we power the{" "}
             <span className="font-semibold text-gray-900">next generation</span>{" "}
             of intelligent tools, content, and infrastructure.
@@ -90,15 +97,18 @@ export default function Hero() {
         </div>
         {/* Primary CTA */}
         <div className={`mb-8 ${poppins.className}`}>
-          <Button className="rounded-full text-xl md:px-31 md:py-8 md:text-2xl text-white bg-gradient-to-b from-[#D5BFFF] to-[#7B61FF] shadow-md font-medium ">
+          <Button
+            className="rounded-full text-base md:px-31 md:py-8 md:text-xl text-white bg-gradient-to-b from-[#D5BFFF] to-[#7B61FF] shadow-md font-medium"
+            style={{ boxShadow: "0px 10px 70px 0px rgba(114, 78, 255, 0.30)" }}
+          >
             <Sparkles className="mr-2" />
             Launch Studio
           </Button>
         </div>
 
         {/* Secondary CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-          <Button className="rounded-full text-sm md:text-lg px-6 md:px-9 py-4 md:py-6 text-[#7063c9] font-medium ">
+        <div className="flex items-center justify-center gap-4 sm:gap-6">
+          <Button className="rounded-full text- md:text-lg px-6 md:px-9 py-4 md:py-6 text-[#7063c9] font-medium ">
             Explore Platform
           </Button>
           <Button className="rounded-full text-sm md:text-lg px-6 md:px-9 py-4 md:py-6 text-[#7063c9] font-medium  ">

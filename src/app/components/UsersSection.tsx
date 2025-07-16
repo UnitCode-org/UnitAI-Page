@@ -49,7 +49,7 @@ export default function UsersSection() {
             <h2 className="text-[32px] font-bold text-gray-900">
               Who it's for?
             </h2>
-            <div className="hidden bg-gray-100 text-gray-600 md:px-4 md:py-2 rounded-full text-md font-medium">
+            <div className="hidden bg-gray-100 text-[#2C2C2E] md:px-4 md:py-2 rounded-full text-md font-normal md:block">
               Users
             </div>
           </div>
@@ -91,10 +91,10 @@ export default function UsersSection() {
 
                   {/* Content */}
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-2xl font-bold text-[#2C2C2E] mb-2">
                       {userType.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-[#9B9B9B] leading-relaxed">
                       {userType.description}
                     </p>
                   </div>

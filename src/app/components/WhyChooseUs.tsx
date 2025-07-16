@@ -80,7 +80,7 @@ export default function WhyChooseUs() {
 
                 {/* Content */}
                 <div className="space-y-3">
-                  <h3 className="text-lg font-bold text-gray-900">
+                  <h3 className="text-base font-bold text-gray-900">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -103,7 +103,7 @@ export default function WhyChooseUs() {
             />
           </div>
 
-          <div className=" overflow-hidden rounded-[32px] border-6 border-white/70 bg-[radial-gradient(761.48%_240.78%_at_98.26%_169.92%,_#FFF_5.14%,_#9D85FF_12.87%,_#6B5EE0_82.15%)] p-18 text-center">
+          <div className=" overflow-hidden rounded-[32px] border-6 border-white/70 bg-[radial-gradient(761.48%_240.78%_at_98.26%_169.92%,_#FFF_5.14%,_#9D85FF_12.87%,_#6B5EE0_82.15%)]  p-10 md:p-18 text-center">
             <div className="absolute  left-24 text-white/20">
               <Image
                 src="/why-choose-us-icons/VectorRightBottom.svg"
@@ -131,21 +131,21 @@ export default function WhyChooseUs() {
 
             {/* Content */}
             <div className="relative mx-auto max-w-4xl">
-              <p className="mb-4 text-2xl text-white/90">
+              <p className="mb-4 text-xl md:text-2xl text-white/90">
                 The next generation of AI won't be built in silos —
               </p>
-              <h3 className="mb-8 text-4xl font-medium text-white md:text-4xl">
+              <h3 className="mb-8 text-xl font-medium text-white md:text-4xl">
                 it will be co-created by developers, artists, and dreamers.
               </h3>
 
               {/* CTA Buttons */}
               <div
-                className={`flex flex-col items-center justify-center gap-4 sm:flex-row ${poppins.className} text-xl`}
+                className={`flex flex-col items-center justify-center gap-4 sm:flex-row ${poppins.className} text-base md:text-xl`}
               >
-                <button className="rounded-full border border-white/20 bg-white/20 px-7 py-3 font-medium text-[#5645f7] backdrop-blur-sm transition-all duration-300 hover:bg-white/30">
+                <button className="rounded-full border border-white/20 bg-white/20 px-4 py-2 md:px-7 md:py-3 font-medium text-[#5645f7] backdrop-blur-sm transition-all duration-300 hover:bg-white/30">
                   Explore Platform
                 </button>
-                <button className="rounded-full border border-white/20 bg-white/20 px-7 py-3 font-medium text-[#5645f7] backdrop-blur-sm transition-all duration-300 hover:bg-white/30">
+                <button className="rounded-full border border-white/20 bg-white/20 px-4 py-2 md:px-7 md:py-3 font-medium text-[#5645f7] backdrop-blur-sm transition-all duration-300 hover:bg-white/30">
                   Join the Network
                 </button>
               </div>
