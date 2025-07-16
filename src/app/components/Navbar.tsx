@@ -49,10 +49,10 @@ function Navbar() {
         </div>
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
-          <Button className="rounded-full md:text-base px-6 py-3 text-white font-semibold md:font-bold bg-[#6a45ff]">
+          <Button className="rounded-full md:text-base px-6 py-3 text-white font-semibold  bg-[#6a45ff]">
             Join Us
           </Button>
-          <Button className="rounded-full md:text-base px-6 py-3 text-white font-semibold md:font-bold bg-[#6a45ff] ">
+          <Button className="rounded-full md:text-base px-6 py-3 text-white font-semibold  bg-[#6a45ff] ">
             Launch Studio
           </Button>
         </div>

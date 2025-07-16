@@ -1,5 +1,10 @@
 import Image from "next/image";
+import { Poppins } from "next/font/google";
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 const products = [
   {
     icon: "/product-services-icons/pencil.svg",
@@ -32,13 +37,15 @@ export default function Products() {
   return (
     <section id="products" className="py-20 bg-white">
       <div className="max-w-4xl px-3 md:mx-auto text-center mb-20">
-        <span className="inline-block px-4 py-1 mb-4 rounded-full bg-gray-100 text-gray-600 text-md font-semibold">
+        <span
+          className={`inline-block px-4 py-1 mb-4 rounded-full bg-gray-100 text-gray-600 text-sm md:text-base font-normal ${poppins.className}`}
+        >
           What we offer
         </span>
-        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-          <span className="font-bold text-black">UnitNetwork.ai</span> operates
-          at the intersection of creative expression, advanced development, and
-          AI infrastructure. The platform brings together:
+        <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-xl">
+          <span className="font-semibold text-black">UnitNetwork.ai</span>{" "}
+          operates at the intersection of creative expression, advanced
+          development, and AI infrastructure. The platform brings together:
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl px-5 md:mx-auto items-center justify-center">
